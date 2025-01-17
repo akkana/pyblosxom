@@ -241,7 +241,7 @@ class EntryBase:
 
         # set the locale back
         #locale.setlocale(locale.LC_ALL, loc)
-        locale.resetlocale()
+        locale.setlocale(locale.LC_ALL, "")
 
     setTime = tools.deprecated_function(set_time)
 
